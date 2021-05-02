@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #e6e6ff"
+    tools:context=".ForgetPass">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/center_line3">
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_above="@id/center_line3"
+        android:layout_marginBottom="120dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textSize="42sp"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't Worry We Are Here!"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="italic">
+        </TextView>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/Pass_recover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/center_line3"
+        android:hint="Enter Registered Email"
+        android:inputType="textEmailAddress"
+        android:gravity="center"
+        android:textColorHint="@color/black">
+
+    </EditText>
+    />
+    <Button
+        android:id="@+id/recover_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recover!"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/center_line3"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#f5f5f0"
+        ></Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back To Login !"
+        android:layout_alignParentBottom="true"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:id="@+id/Goback_frecover"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        >
+
+    </TextView>
+
+
+</RelativeLayout>

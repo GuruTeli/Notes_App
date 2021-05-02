@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+           app:cardBackgroundColor="@color/white"
+           android:id="@+id/notecard">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                   android:id="@+id/note"
+                     >
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_weight="1"
+                                android:text="This is Head"
+                                android:textSize="22sp"
+                                android:id="@+id/notetitle"
+                                android:textColor="@color/black"
+                                >
+                            </TextView>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_baseline_more_vert_24"
+                                android:layout_weight="0"
+                                android:id="@+id/popmenu"
+                                >
+
+                            </ImageView>
+                     </LinearLayout>
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:padding="30dp"
+                         android:text="Here Our Content"
+                         android:textSize="18sp"
+                         android:textColor="@color/black"
+                         android:id="@+id/notecontent">
+
+                     </TextView>
+                     <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Created Date-"
+                         android:padding="5dp"
+                         android:layout_gravity="bottom|left"
+                         android:textColor="@color/black"
+                         android:textSize="12sp"></TextView>
+
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="bottom|left"
+                         android:padding="5dp"
+                         android:id="@+id/setDate"
+                         android:textSize="12sp"
+                            >
+
+                     </TextView>
+                     </LinearLayout>
+
+              </LinearLayout>
+       </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
